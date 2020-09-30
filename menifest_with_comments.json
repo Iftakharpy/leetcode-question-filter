@@ -1,0 +1,28 @@
+{
+    "name": "HW Extention",     // "Extention name"
+    "description" : "Description of the extention",     // Description of this extension
+    // Version number for this chrome extension"
+    "version": "0.0.1",
+
+    // manifest version for chrome
+    "manifest_version": 2,
+
+    "browser_action": {
+        // small icon 16x16 pixels icon this will be seen by the user when he opens the chrome
+        "default_icon": "hello_extensions.png",
+        "default_title": "This will be shown when user hovers the icon",
+        // this page will toggle when a user clicks on the small icon
+        "default_popup": "hello.html"
+    },
+
+    // Setting shortcut to simulate extension button click
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F",
+                "mac": "MacCtrl+Shift+F"
+            },
+            "description": "Opens hello.html"
+        }
+    }
+}

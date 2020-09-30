@@ -1,0 +1,35 @@
+{
+    "name": "Leetcode Question Filter",
+    "description" : "Remove locked/unlocked questions from your webpage on leectode website.",
+    "version": "2020.9.30",
+    "manifest_version": 2,
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F",
+                "mac": "MacCtrl+Shift+F"
+            },
+            "description": "Opens popup.html"
+        }
+    },
+    "permissions": ["activeTab","declarativeContent"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "page_action":{
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/lc_16.png",
+            "32": "images/lc_32.png",
+            "48": "images/lc_48.png",
+            "128": "images/lc_128.png"
+        }
+    },
+    "icons": {
+        "16": "images/lc_16.png",
+        "32": "images/lc_32.png",
+        "48": "images/lc_48.png",
+        "128": "images/lc_128.png"
+    }
+}

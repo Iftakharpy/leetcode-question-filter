@@ -1,0 +1,102 @@
+
+/* 
+THIS IS THE MAX HEIGHT AND WIDTH FOR CHROME EXTENTION POPUP
+HEIGHT  :   600px;
+WIDTH   :   783px;
+*/
+
+
+html,body{
+    min-width: 300px;
+    min-height: 100%;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    box-sizing: border-box;
+    position: relative;
+    margin: 5px 0px;
+}
+
+div:first-of-type{
+    margin-bottom: 30px;
+}
+
+button{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
+    box-sizing: border-box;
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    color: #333;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+button:hover{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border-radius: 5px;
+    outline: 0;
+    text-decoration: none;
+    color: #333;
+    background-color: #e6e6e6;
+}
+
+
+
+h1{
+    margin:0px;
+    margin-top: 10px;
+}
+
+
+button.remove{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
+    background: linear-gradient(#ed6e57, #db3c26);
+    border: 0px;
+    color: #fff;
+}
+
+button.remove:hover{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
+    color: rgb(160, 0, 0);
+    transition: all 0.4s;
+    background: linear-gradient(#ed6e57, #db3c26);
+}
+
+div>button:first-of-type{
+    margin-top: 8px;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <h1>Hide/Show</h1>
+            <small>The questions will be hidden but therefore <strong>more memory</strong> will be used. But <strong>webpage won't crush</strong>.</small>
+            <button class="hide" aria-hidden="true" id="locked"><span>Show</span> locked questions</button>
+        </div>
+        <hr>
+        <div>
+            <h1>Remove</h1>
+            <small>After removing the items if you try to sort/filter the questions the <strong>page might crash</strong>. But extra items will be removed therefore <strong>less memory</strong> will be used.</small>
+            <button class="remove" id="remove-locked">Locked questions</button>
+            <button class="remove" id="remove-unlocked">Unlocked questions</button>
+        </div>
+    <script src="popup.js"></script>
+    </body>
+</html>
