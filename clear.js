@@ -18,9 +18,13 @@ function remove_locked_questions(path=questions_xpath){
     let rows = xpath(path);
     let total = rows.length
 
+    // determinent for the question if it's unlocked
+    let url = window.location.href.match(/leetcode\.com\/tag/)
+    let det = (url!==null)? 1:2
+
     //removing locked questions from table
     for (let row of rows){
-        if (row.getElementsByClassName("fa fa-lock").length>1){
+        if (row.getElementsByClassName("fa fa-lock").length>=det){
             row.remove();
         }
     }
@@ -37,9 +41,13 @@ function remove_unlocked_questions(path = questions_xpath){
     let rows = xpath(path);
     let total = rows.length
 
+    // determinent for the question if it's unlocked
+    let url = window.location.href.match(/leetcode\.com\/tag/)
+    let det = (url!==null)? 1:2
+
     //removing unlocked questions from table
     for (let row of rows){
-        if (row.getElementsByClassName("fa fa-lock").length<=1){
+        if (row.getElementsByClassName("fa fa-lock").length<det){
             row.remove();
         }
     }
@@ -56,9 +64,13 @@ function hide_locked_questions(path=questions_xpath, boolean=true){
     let total = rows.length
     let remaining_questions = total
 
+    // determinent for the question if it's unlocked
+    let url = window.location.href.match(/leetcode\.com\/tag/)
+    let det = (url!==null)? 1:2
+
     //removing locked questions from table
     for (let row of rows){
-        if (row.getElementsByClassName("fa fa-lock").length>1 && boolean){
+        if (row.getElementsByClassName("fa fa-lock").length>=det && boolean){
             row.style.display = "none";
             remaining_questions--;
         }
@@ -79,9 +91,13 @@ function hide_unlocked_questions(path=questions_xpath, boolean=true){
     let total = rows.length
     let remaining_questions = total
 
+    // determinent for the question if it's unlocked
+    let url = window.location.href.match(/leetcode\.com\/tag/)
+    let det = (url!==null)? 1:2
+
     //removing locked questions from table
     for (let row of rows){
-        if (row.getElementsByClassName("fa fa-lock").length<=1 && boolean){
+        if (row.getElementsByClassName("fa fa-lock").length<det && boolean){
             row.style.display = "none";
             remaining_questions--;
         }
